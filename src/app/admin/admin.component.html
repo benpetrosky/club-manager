@@ -1,0 +1,32 @@
+<h3>Add a new player to the roster</h3>
+<div>
+  <div>
+    <label>Player name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Their position:</label>
+    <br>
+    <select #newPosition>
+      <option value="Attacker">Attacker</option>
+      <option value="Mid-fielder">Mid-fielder</option>
+      <option value="Defender">Defender</option>
+      <option value="Goal keeper">Keeper</option>
+    </select>
+  </div>
+
+  <div>
+    <label>A little about the player:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+
+  <div>
+    <label>Their age:</label>
+    <br>
+    <input type="number" #newAge>
+  </div>
+   <button (click)="submitForm(newName.value, newPosition.value, newDescription.value, newAge.value); newName.value=''; newDescription.value=''; newAge.value=''">Add</button>
+</div>

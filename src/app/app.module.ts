@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
 import { PlayerListComponent } from './player-list/player-list.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -28,7 +29,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     AboutComponent,
-    PlayerListComponent
+    PlayerListComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
