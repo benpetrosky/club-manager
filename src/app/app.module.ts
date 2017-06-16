@@ -17,6 +17,7 @@ import { PlayerListComponent } from './player-list/player-list.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { PositionPipe } from './position.pipe';
 
 
 
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     PlayerListComponent,
     AdminComponent,
     EditPlayerComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    PositionPipe
   ],
   imports: [
     BrowserModule,

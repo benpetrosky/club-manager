@@ -24,5 +24,9 @@ export class PlayerListComponent implements OnInit {
   goToDetailPage(clickedPlayer){
     this.router.navigate(['players', clickedPlayer.$key])
   }
+  filterByPosition: "allPlayers";
+  onChange(optionFromMenu) {
+  this.filterByPosition = optionFromMenu;
+  }
 
 }

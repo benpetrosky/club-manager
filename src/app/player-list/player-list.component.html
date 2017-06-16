@@ -1,6 +1,14 @@
 <h2>List of players</h2>
 
-<div *ngFor="let player of players | async" class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+  <option selected="selected" value="allPlayers">All Players</option>
+  <option value="attackingPlayers">Attackers</option>
+  <option value="midPlayers">Midfielders</option>
+  <option value="defensivePlayers">Defenders</option>
+  <option value="keepers">Goal Keepers</option>
+</select>
+
+<div *ngFor="let player of players | async | position:filterByPosition" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> is {{player.age}} years old.</h3>
     <div *ngIf="currentRoute === '/admin'">
