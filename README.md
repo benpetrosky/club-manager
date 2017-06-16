@@ -2,6 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Database set-up
+
+After cloning this repository to your desktop and installing the proper angular tools needed.  Follow these instructions to implement your own database.
+
+Go to your Firebase
+add project
+obtain your api key info
+put the following code in your api-keys file
+
+export var masterFirebaseConfig = {
+  apiKey: "xxxxx",
+  authDomain: "xxxxxx",
+  databaseURL: "xxxxx",
+  storageBucket: "xxx",
+  messagingSenderId: "xxxx"
+};
+
+run $ npm install angularfire2@4.0.0-rc.0 firebase --save
+  in your terminal project directory
+
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
