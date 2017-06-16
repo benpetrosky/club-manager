@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 
 
@@ -30,7 +32,9 @@ export const firebaseConfig = {
     AppComponent,
     AboutComponent,
     PlayerListComponent,
-    AdminComponent
+    AdminComponent,
+    EditPlayerComponent,
+    PlayerDetailComponent
   ],
   imports: [
     BrowserModule,

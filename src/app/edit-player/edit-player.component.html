@@ -1,0 +1,38 @@
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Edit Player</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <label>Change player name:</label>
+      <br>
+      <input [(ngModel)]="selectedPlayer.name">
+    </div>
+    <div>
+      <label>Change player position:</label>
+      <br>
+      <select [(ngModel)]="selectedPlayer.position">
+        <option value="Attacker">Attacker</option>
+        <option value="Mid-fielder">Mid-fielder</option>
+        <option value="Defender">Defender</option>
+        <option value="Goal Keeper">Goal Keeper</option>
+      </select>
+    </div>
+    <div>
+      <label>Change description of player:</label>
+      <br>
+      <input [(ngModel)]="selectedPlayer.description">
+    </div>
+    <div>
+      <label>Change Player Age:</label>
+      <br>
+      <input type="number" [(ngModel)]="selectedPlayer.age">
+    </div>
+
+    <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+    <hr>
+    <button (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
+  </div>
+</div>
