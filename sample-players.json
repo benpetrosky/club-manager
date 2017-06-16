@@ -1,0 +1,17 @@
+{ "players": [{
+    "name": "Sergio Aguero",
+    "position": "attacker",
+    "description": "Great player happy to have him on the team",
+    "age": "26"
+    }, {
+    "name": "Wayne Rooney",
+    "position": "mid-fielder",
+    "description": "An aging star that doesn't know when to give up already.",
+    "age": "65"
+      }, {
+    "name": "David Luiz",
+    "position": "defender",
+    "description": "I guess he's a defender. He runs all over the place though, like an excited kindergardner",
+    "age": "25"
+  }]
+}

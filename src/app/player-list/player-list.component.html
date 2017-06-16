@@ -1,0 +1,8 @@
+<h2>List of players</h2>
+
+<div *ngFor="let player of players | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{player.name}}</em> is {{player.age}} years old.</h3>
+
+  </div>
+</div>
